@@ -45,6 +45,16 @@ module.exports = {
 	    defaultsTo: ""
      },
   
+    code: {
+	    model:'Code',
+	    via:'id_player'
+    },
+
+    try: {
+	    type:'integer',
+	    defaultsTo:0
+    },
+
     photo: {
       type: 'string',
       defaultsTo: '',

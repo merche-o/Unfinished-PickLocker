@@ -12,30 +12,12 @@ module.exports = {
 	status_game:  {type:'string', required: true},
 	nb_turn:  {type:'integer', defaultsTo: 0},
 	  _player1 : {
-	    model:'PlayerIG',
-	      /*
-	      "id_player": "",
-	      "code" : "",
-	      "type" : "",
-	      "try" : "",
-	      "list_bonus":[
-{"name":"","type":"","nb_used":"", "nb_availible":""},
-{"name":"","type":"","nb_used":"", "nb_availible":""},
-] 
-	      */},
+	    model:'User',
+
+	     },
 	  "_player2" : {
-	      model:'PlayerIG',
-	      /*
-	      "id_player": "",
-	      "code" : "",
-	      "type" : "",
-	      "try" : "",
-	      "list_bonus":[
-{"name":"","type":"","nb_used":"", "nb_availible":""},
-{"name":"","type":"","nb_used":"", "nb_availible":""},
-] 
+	      model:'User',
 	  },
-	  }*/
-  }]
+      }
 };
 

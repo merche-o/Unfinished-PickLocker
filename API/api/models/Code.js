@@ -8,7 +8,10 @@
 module.exports = {
 
   attributes: {
-
+	code: {type:'string', required: true},
+	turn: {type:'integer'},
+	id_player:{type:'intger'},
+	id_game:{type:'integer'}
   }
 };
 
