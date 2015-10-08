@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E77D4E01BC66F7C00C1A443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D4DF1BC66F7C00C1A443 /* AppDelegate.swift */; };
+		2E77D4E21BC66F7C00C1A443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D4E11BC66F7C00C1A443 /* ViewController.swift */; };
+		2E77D4E51BC66F7C00C1A443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E77D4E31BC66F7C00C1A443 /* Main.storyboard */; };
+		2E77D4E81BC66F7C00C1A443 /* PickLocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D4E61BC66F7C00C1A443 /* PickLocker.xcdatamodeld */; };
+		2E77D4EA1BC66F7C00C1A443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E77D4E91BC66F7C00C1A443 /* Assets.xcassets */; };
+		2E77D4ED1BC66F7C00C1A443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E77D4EB1BC66F7C00C1A443 /* LaunchScreen.storyboard */; };
+		2E77D4F81BC66F7C00C1A443 /* PickLockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D4F71BC66F7C00C1A443 /* PickLockerTests.swift */; };
+		2E77D5031BC66F7C00C1A443 /* PickLockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D5021BC66F7C00C1A443 /* PickLockerUITests.swift */; };
+		2E77D5131BC6735300C1A443 /* HomePageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D5121BC6735300C1A443 /* HomePageTabBarController.swift */; settings = {ASSET_TAGS = (); }; };
+		2E77D5151BC6740D00C1A443 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D5141BC6740D00C1A443 /* HomePageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		874E7C4711245FE8D768C72D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB30235A7F78404C23C1344 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E77D4F41BC66F7C00C1A443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E77D4D41BC66F7C00C1A443 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E77D4DB1BC66F7C00C1A443;
+			remoteInfo = PickLocker;
+		};
+		2E77D4FF1BC66F7C00C1A443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E77D4D41BC66F7C00C1A443 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E77D4DB1BC66F7C00C1A443;
+			remoteInfo = PickLocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25BC683208A03B800333E5DD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2E77D4DC1BC66F7C00C1A443 /* PickLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E77D4DF1BC66F7C00C1A443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E77D4E11BC66F7C00C1A443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E77D4E41BC66F7C00C1A443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E77D4E71BC66F7C00C1A443 /* PickLocker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PickLocker.xcdatamodel; sourceTree = "<group>"; };
+		2E77D4E91BC66F7C00C1A443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E77D4EC1BC66F7C00C1A443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E77D4EE1BC66F7C00C1A443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E77D4F31BC66F7C00C1A443 /* PickLockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickLockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E77D4F71BC66F7C00C1A443 /* PickLockerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickLockerTests.swift; sourceTree = "<group>"; };
+		2E77D4F91BC66F7C00C1A443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E77D4FE1BC66F7C00C1A443 /* PickLockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickLockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E77D5021BC66F7C00C1A443 /* PickLockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickLockerUITests.swift; sourceTree = "<group>"; };
+		2E77D5041BC66F7C00C1A443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E77D5121BC6735300C1A443 /* HomePageTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageTabBarController.swift; sourceTree = "<group>"; };
+		2E77D5141BC6740D00C1A443 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		677FE2E167BBE645506BD3D2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BCB30235A7F78404C23C1344 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E77D4D91BC66F7C00C1A443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874E7C4711245FE8D768C72D /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E77D4F01BC66F7C00C1A443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E77D4FB1BC66F7C00C1A443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186DB0D53C289E2100F6C90D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCB30235A7F78404C23C1344 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CA4B248A661F133B241244C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25BC683208A03B800333E5DD /* Pods.debug.xcconfig */,
+				677FE2E167BBE645506BD3D2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2E77D4D31BC66F7C00C1A443 = {
+			isa = PBXGroup;
+			children = (
+				2E77D4DE1BC66F7C00C1A443 /* PickLocker */,
+				2E77D4F61BC66F7C00C1A443 /* PickLockerTests */,
+				2E77D5011BC66F7C00C1A443 /* PickLockerUITests */,
+				2E77D4DD1BC66F7C00C1A443 /* Products */,
+				2CA4B248A661F133B241244C /* Pods */,
+				186DB0D53C289E2100F6C90D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E77D4DD1BC66F7C00C1A443 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E77D4DC1BC66F7C00C1A443 /* PickLocker.app */,
+				2E77D4F31BC66F7C00C1A443 /* PickLockerTests.xctest */,
+				2E77D4FE1BC66F7C00C1A443 /* PickLockerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E77D4DE1BC66F7C00C1A443 /* PickLocker */ = {
+			isa = PBXGroup;
+			children = (
+				2E77D4DF1BC66F7C00C1A443 /* AppDelegate.swift */,
+				2E77D4E11BC66F7C00C1A443 /* ViewController.swift */,
+				2E77D4E31BC66F7C00C1A443 /* Main.storyboard */,
+				2E77D4E91BC66F7C00C1A443 /* Assets.xcassets */,
+				2E77D4EB1BC66F7C00C1A443 /* LaunchScreen.storyboard */,
+				2E77D4EE1BC66F7C00C1A443 /* Info.plist */,
+				2E77D4E61BC66F7C00C1A443 /* PickLocker.xcdatamodeld */,
+				2E77D5121BC6735300C1A443 /* HomePageTabBarController.swift */,
+				2E77D5141BC6740D00C1A443 /* HomePageViewController.swift */,
+			);
+			path = PickLocker;
+			sourceTree = "<group>";
+		};
+		2E77D4F61BC66F7C00C1A443 /* PickLockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E77D4F71BC66F7C00C1A443 /* PickLockerTests.swift */,
+				2E77D4F91BC66F7C00C1A443 /* Info.plist */,
+			);
+			path = PickLockerTests;
+			sourceTree = "<group>";
+		};
+		2E77D5011BC66F7C00C1A443 /* PickLockerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E77D5021BC66F7C00C1A443 /* PickLockerUITests.swift */,
+				2E77D5041BC66F7C00C1A443 /* Info.plist */,
+			);
+			path = PickLockerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E77D4DB1BC66F7C00C1A443 /* PickLocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E77D5071BC66F7C00C1A443 /* Build configuration list for PBXNativeTarget "PickLocker" */;
+			buildPhases = (
+				983392F7DDE2478C82353B55 /* Check Pods Manifest.lock */,
+				2E77D4D81BC66F7C00C1A443 /* Sources */,
+				2E77D4D91BC66F7C00C1A443 /* Frameworks */,
+				2E77D4DA1BC66F7C00C1A443 /* Resources */,
+				EB29B7B65D0CFBEA66230B8D /* Embed Pods Frameworks */,
+				912D4A3692EA2656B831727F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PickLocker;
+			productName = PickLocker;
+			productReference = 2E77D4DC1BC66F7C00C1A443 /* PickLocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E77D4F21BC66F7C00C1A443 /* PickLockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E77D50A1BC66F7C00C1A443 /* Build configuration list for PBXNativeTarget "PickLockerTests" */;
+			buildPhases = (
+				2E77D4EF1BC66F7C00C1A443 /* Sources */,
+				2E77D4F01BC66F7C00C1A443 /* Frameworks */,
+				2E77D4F11BC66F7C00C1A443 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E77D4F51BC66F7C00C1A443 /* PBXTargetDependency */,
+			);
+			name = PickLockerTests;
+			productName = PickLockerTests;
+			productReference = 2E77D4F31BC66F7C00C1A443 /* PickLockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E77D4FD1BC66F7C00C1A443 /* PickLockerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E77D50D1BC66F7C00C1A443 /* Build configuration list for PBXNativeTarget "PickLockerUITests" */;
+			buildPhases = (
+				2E77D4FA1BC66F7C00C1A443 /* Sources */,
+				2E77D4FB1BC66F7C00C1A443 /* Frameworks */,
+				2E77D4FC1BC66F7C00C1A443 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E77D5001BC66F7C00C1A443 /* PBXTargetDependency */,
+			);
+			name = PickLockerUITests;
+			productName = PickLockerUITests;
+			productReference = 2E77D4FE1BC66F7C00C1A443 /* PickLockerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E77D4D41BC66F7C00C1A443 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "A&D";
+				TargetAttributes = {
+					2E77D4DB1BC66F7C00C1A443 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = LA28YYMH2T;
+					};
+					2E77D4F21BC66F7C00C1A443 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 2E77D4DB1BC66F7C00C1A443;
+					};
+					2E77D4FD1BC66F7C00C1A443 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 2E77D4DB1BC66F7C00C1A443;
+					};
+				};
+			};
+			buildConfigurationList = 2E77D4D71BC66F7C00C1A443 /* Build configuration list for PBXProject "PickLocker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E77D4D31BC66F7C00C1A443;
+			productRefGroup = 2E77D4DD1BC66F7C00C1A443 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E77D4DB1BC66F7C00C1A443 /* PickLocker */,
+				2E77D4F21BC66F7C00C1A443 /* PickLockerTests */,
+				2E77D4FD1BC66F7C00C1A443 /* PickLockerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E77D4DA1BC66F7C00C1A443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E77D4ED1BC66F7C00C1A443 /* LaunchScreen.storyboard in Resources */,
+				2E77D4EA1BC66F7C00C1A443 /* Assets.xcassets in Resources */,
+				2E77D4E51BC66F7C00C1A443 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E77D4F11BC66F7C00C1A443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E77D4FC1BC66F7C00C1A443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		912D4A3692EA2656B831727F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		983392F7DDE2478C82353B55 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB29B7B65D0CFBEA66230B8D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E77D4D81BC66F7C00C1A443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E77D4E81BC66F7C00C1A443 /* PickLocker.xcdatamodeld in Sources */,
+				2E77D4E21BC66F7C00C1A443 /* ViewController.swift in Sources */,
+				2E77D4E01BC66F7C00C1A443 /* AppDelegate.swift in Sources */,
+				2E77D5151BC6740D00C1A443 /* HomePageViewController.swift in Sources */,
+				2E77D5131BC6735300C1A443 /* HomePageTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E77D4EF1BC66F7C00C1A443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E77D4F81BC66F7C00C1A443 /* PickLockerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E77D4FA1BC66F7C00C1A443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E77D5031BC66F7C00C1A443 /* PickLockerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E77D4F51BC66F7C00C1A443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E77D4DB1BC66F7C00C1A443 /* PickLocker */;
+			targetProxy = 2E77D4F41BC66F7C00C1A443 /* PBXContainerItemProxy */;
+		};
+		2E77D5001BC66F7C00C1A443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E77D4DB1BC66F7C00C1A443 /* PickLocker */;
+			targetProxy = 2E77D4FF1BC66F7C00C1A443 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E77D4E31BC66F7C00C1A443 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E77D4E41BC66F7C00C1A443 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E77D4EB1BC66F7C00C1A443 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E77D4EC1BC66F7C00C1A443 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E77D5051BC66F7C00C1A443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E77D5061BC66F7C00C1A443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E77D5081BC66F7C00C1A443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25BC683208A03B800333E5DD /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PickLocker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "A-D.PickLocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E77D5091BC66F7C00C1A443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 677FE2E167BBE645506BD3D2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PickLocker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "A-D.PickLocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2E77D50B1BC66F7C00C1A443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PickLockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "A-D.PickLockerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickLocker.app/PickLocker";
+			};
+			name = Debug;
+		};
+		2E77D50C1BC66F7C00C1A443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PickLockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "A-D.PickLockerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickLocker.app/PickLocker";
+			};
+			name = Release;
+		};
+		2E77D50E1BC66F7C00C1A443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PickLockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "A-D.PickLockerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PickLocker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2E77D50F1BC66F7C00C1A443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PickLockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "A-D.PickLockerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PickLocker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E77D4D71BC66F7C00C1A443 /* Build configuration list for PBXProject "PickLocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E77D5051BC66F7C00C1A443 /* Debug */,
+				2E77D5061BC66F7C00C1A443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E77D5071BC66F7C00C1A443 /* Build configuration list for PBXNativeTarget "PickLocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E77D5081BC66F7C00C1A443 /* Debug */,
+				2E77D5091BC66F7C00C1A443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E77D50A1BC66F7C00C1A443 /* Build configuration list for PBXNativeTarget "PickLockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E77D50B1BC66F7C00C1A443 /* Debug */,
+				2E77D50C1BC66F7C00C1A443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E77D50D1BC66F7C00C1A443 /* Build configuration list for PBXNativeTarget "PickLockerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E77D50E1BC66F7C00C1A443 /* Debug */,
+				2E77D50F1BC66F7C00C1A443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E77D4E61BC66F7C00C1A443 /* PickLocker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E77D4E71BC66F7C00C1A443 /* PickLocker.xcdatamodel */,
+			);
+			currentVersion = 2E77D4E71BC66F7C00C1A443 /* PickLocker.xcdatamodel */;
+			path = PickLocker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E77D4D41BC66F7C00C1A443 /* Project object */;
+}

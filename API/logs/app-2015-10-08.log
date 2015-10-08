@@ -231,3 +231,16 @@
 2015-10-08T08:46:26.037Z - debug: [34mdebug: [39mEnvironment : development
 2015-10-08T08:46:26.038Z - debug: [34mdebug: [39mPort        : 3000
 2015-10-08T08:46:26.038Z - debug: [34mdebug: [39m[90m--------------------------------------------------------[39m
+2015-10-08T08:46:25.652Z - verbose: [36mverbose: [39mLoading adapter ( sails-disk ) for account  from `node_modules` directory...
+2015-10-08T08:46:25.710Z - verbose: [36mverbose: [39mStarting ORM...
+2015-10-08T08:46:25.710Z - silly: [31ms[39m[33mi[39m[32ml[39m[34ml[39m[35my[39m[31m:[39m Registering model `account` in Waterline (ORM)
+2015-10-08T08:46:25.711Z - silly: [31ms[39m[33mi[39m[32ml[39m[34ml[39m[35my[39m[31m:[39m Registering model `bonus` in Waterline (ORM)
+2015-10-08T08:46:25.711Z - silly: [31ms[39m[33mi[39m[32ml[39m[34ml[39m[35my[39m[31m:[39m Registering model `code` in Waterline (ORM)
+2015-10-08T08:46:25.711Z - silly: [31ms[39m[33mi[39m[32ml[39m[34ml[39m[35my[39m[31m:[39m Registering model `game` in Waterline (ORM)
+2015-10-08T08:46:25.712Z - silly: [31ms[39m[33mi[39m[32ml[39m[34ml[39m[35my[39m[31m:[39m Registering model `history` in Waterline (ORM)
+2015-10-08T08:46:25.712Z - silly: [31ms[39m[33mi[39m[32ml[39m[34ml[39m[35my[39m[31m:[39m Registering model `player` in Waterline (ORM)
+2015-10-08T08:46:25.712Z - silly: [31ms[39m[33mi[39m[32ml[39m[34ml[39m[35my[39m[31m:[39m Registering model `user` in Waterline (ORM)
+2015-10-08T12:17:50.606Z - verbose: [36mverbose: [39mLowering sails...
+2015-10-08T12:17:50.650Z - verbose: [36mverbose: [39mShutting down socket server...
+2015-10-08T12:17:50.657Z - verbose: [36mverbose: [39mShutting down HTTP server...
+2015-10-08T12:17:50.757Z - verbose: [36mverbose: [39mHTTP server shut down successfully.
