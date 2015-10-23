@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2E77D4E01BC66F7C00C1A443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D4DF1BC66F7C00C1A443 /* AppDelegate.swift */; };
-		2E77D4E21BC66F7C00C1A443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D4E11BC66F7C00C1A443 /* ViewController.swift */; };
 		2E77D4E51BC66F7C00C1A443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E77D4E31BC66F7C00C1A443 /* Main.storyboard */; };
 		2E77D4E81BC66F7C00C1A443 /* PickLocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D4E61BC66F7C00C1A443 /* PickLocker.xcdatamodeld */; };
 		2E77D4EA1BC66F7C00C1A443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E77D4E91BC66F7C00C1A443 /* Assets.xcassets */; };
@@ -17,6 +16,14 @@
 		2E77D5031BC66F7C00C1A443 /* PickLockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D5021BC66F7C00C1A443 /* PickLockerUITests.swift */; };
 		2E77D5131BC6735300C1A443 /* HomePageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D5121BC6735300C1A443 /* HomePageTabBarController.swift */; settings = {ASSET_TAGS = (); }; };
 		2E77D5151BC6740D00C1A443 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D5141BC6740D00C1A443 /* HomePageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2E77D5171BC7E75000C1A443 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D5161BC7E75000C1A443 /* GameViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2E899B5B1BD3FFD90030D605 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E899B5A1BD3FFD90030D605 /* NewGameViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2EB5C5341BD90FA80006FC73 /* SingInConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5C5331BD90FA80006FC73 /* SingInConnector.swift */; settings = {ASSET_TAGS = (); }; };
+		2EB5C5361BD9125F0006FC73 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5C5351BD9125F0006FC73 /* UserData.swift */; settings = {ASSET_TAGS = (); }; };
+		2EB5C5381BD935960006FC73 /* RequestWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5C5371BD935960006FC73 /* RequestWS.swift */; settings = {ASSET_TAGS = (); }; };
+		2EB7641B1BD40B4100B459A6 /* WSConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB7641A1BD40B4100B459A6 /* WSConnector.swift */; settings = {ASSET_TAGS = (); }; };
+		2EB7641F1BD40C1400B459A6 /* PickLockerWSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB7641E1BD40C1400B459A6 /* PickLockerWSProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		2EB764221BD40C9C00B459A6 /* MethodEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB764201BD40C9C00B459A6 /* MethodEnum.swift */; settings = {ASSET_TAGS = (); }; };
 		874E7C4711245FE8D768C72D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB30235A7F78404C23C1344 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -41,7 +48,6 @@
 		25BC683208A03B800333E5DD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2E77D4DC1BC66F7C00C1A443 /* PickLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E77D4DF1BC66F7C00C1A443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E77D4E11BC66F7C00C1A443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E77D4E41BC66F7C00C1A443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E77D4E71BC66F7C00C1A443 /* PickLocker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PickLocker.xcdatamodel; sourceTree = "<group>"; };
 		2E77D4E91BC66F7C00C1A443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +61,14 @@
 		2E77D5041BC66F7C00C1A443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E77D5121BC6735300C1A443 /* HomePageTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageTabBarController.swift; sourceTree = "<group>"; };
 		2E77D5141BC6740D00C1A443 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		2E77D5161BC7E75000C1A443 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2E899B5A1BD3FFD90030D605 /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
+		2EB5C5331BD90FA80006FC73 /* SingInConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingInConnector.swift; sourceTree = "<group>"; };
+		2EB5C5351BD9125F0006FC73 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2EB5C5371BD935960006FC73 /* RequestWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestWS.swift; sourceTree = "<group>"; };
+		2EB7641A1BD40B4100B459A6 /* WSConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSConnector.swift; sourceTree = "<group>"; };
+		2EB7641E1BD40C1400B459A6 /* PickLockerWSProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickLockerWSProtocol.swift; sourceTree = "<group>"; };
+		2EB764201BD40C9C00B459A6 /* MethodEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodEnum.swift; sourceTree = "<group>"; };
 		677FE2E167BBE645506BD3D2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BCB30235A7F78404C23C1344 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,15 +141,18 @@
 		2E77D4DE1BC66F7C00C1A443 /* PickLocker */ = {
 			isa = PBXGroup;
 			children = (
+				2EB7641E1BD40C1400B459A6 /* PickLockerWSProtocol.swift */,
+				2EB5C5371BD935960006FC73 /* RequestWS.swift */,
+				2EB5C53C1BD93B600006FC73 /* Utils */,
+				2EB5C53B1BD93B530006FC73 /* View */,
+				2EB5C53A1BD93B430006FC73 /* Connector */,
+				2EB5C5391BD93B380006FC73 /* Entity */,
 				2E77D4DF1BC66F7C00C1A443 /* AppDelegate.swift */,
-				2E77D4E11BC66F7C00C1A443 /* ViewController.swift */,
 				2E77D4E31BC66F7C00C1A443 /* Main.storyboard */,
 				2E77D4E91BC66F7C00C1A443 /* Assets.xcassets */,
 				2E77D4EB1BC66F7C00C1A443 /* LaunchScreen.storyboard */,
 				2E77D4EE1BC66F7C00C1A443 /* Info.plist */,
 				2E77D4E61BC66F7C00C1A443 /* PickLocker.xcdatamodeld */,
-				2E77D5121BC6735300C1A443 /* HomePageTabBarController.swift */,
-				2E77D5141BC6740D00C1A443 /* HomePageViewController.swift */,
 			);
 			path = PickLocker;
 			sourceTree = "<group>";
@@ -156,6 +173,42 @@
 				2E77D5041BC66F7C00C1A443 /* Info.plist */,
 			);
 			path = PickLockerUITests;
+			sourceTree = "<group>";
+		};
+		2EB5C5391BD93B380006FC73 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2EB5C5351BD9125F0006FC73 /* UserData.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		2EB5C53A1BD93B430006FC73 /* Connector */ = {
+			isa = PBXGroup;
+			children = (
+				2EB7641A1BD40B4100B459A6 /* WSConnector.swift */,
+				2EB5C5331BD90FA80006FC73 /* SingInConnector.swift */,
+			);
+			name = Connector;
+			sourceTree = "<group>";
+		};
+		2EB5C53B1BD93B530006FC73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E77D5121BC6735300C1A443 /* HomePageTabBarController.swift */,
+				2E77D5141BC6740D00C1A443 /* HomePageViewController.swift */,
+				2E77D5161BC7E75000C1A443 /* GameViewController.swift */,
+				2E899B5A1BD3FFD90030D605 /* NewGameViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2EB5C53C1BD93B600006FC73 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2EB764201BD40C9C00B459A6 /* MethodEnum.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,10 +394,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E77D4E81BC66F7C00C1A443 /* PickLocker.xcdatamodeld in Sources */,
-				2E77D4E21BC66F7C00C1A443 /* ViewController.swift in Sources */,
+				2EB7641B1BD40B4100B459A6 /* WSConnector.swift in Sources */,
 				2E77D4E01BC66F7C00C1A443 /* AppDelegate.swift in Sources */,
+				2EB7641F1BD40C1400B459A6 /* PickLockerWSProtocol.swift in Sources */,
+				2E899B5B1BD3FFD90030D605 /* NewGameViewController.swift in Sources */,
+				2EB5C5381BD935960006FC73 /* RequestWS.swift in Sources */,
+				2EB5C5361BD9125F0006FC73 /* UserData.swift in Sources */,
 				2E77D5151BC6740D00C1A443 /* HomePageViewController.swift in Sources */,
+				2EB764221BD40C9C00B459A6 /* MethodEnum.swift in Sources */,
+				2E77D5171BC7E75000C1A443 /* GameViewController.swift in Sources */,
 				2E77D5131BC6735300C1A443 /* HomePageTabBarController.swift in Sources */,
+				2EB5C5341BD90FA80006FC73 /* SingInConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

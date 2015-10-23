@@ -81,7 +81,7 @@ function _onLocalStrategyAuth(req, email, password, next) {
 
       if (!HashService.bcrypt.compareSync(password, user.password)) return next(null, null, {
         code: 'E_WRONG_PASSWORD',
-        message: 'Password is wrong'
+		  message: 'Password is wrong ' + password + ' db: ' + user.password + ' should be ' + HashService.bcrypt.hashSync(password)  
       });
 
       return next(null, user, {});

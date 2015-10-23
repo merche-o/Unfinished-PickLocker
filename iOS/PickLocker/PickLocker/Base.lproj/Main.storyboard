@@ -78,55 +78,63 @@
                                 <rect key="frame" x="277" y="316" width="46" height="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
-                                    <segue destination="97g-nc-kS1" kind="show" id="eOz-3z-5XD"/>
+                                    <segue destination="uju-LC-ft8" kind="show" id="WWo-lr-YPY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="9W1-dD-WnK"/>
+                    <navigationItem key="navigationItem" title="Home" id="mom-hQ-ZLr">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="hef-oO-d3d"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDn-R1-Vod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="376" y="81"/>
         </scene>
-        <!--Back-->
-        <scene sceneID="aRZ-bV-koq">
+        <!--New Game View Controller-->
+        <scene sceneID="D6a-h2-gtW">
             <objects>
-                <navigationController title="Back" id="97g-nc-kS1" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9sl-xT-DwW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Llq-zU-t1p" kind="relationship" relationship="rootViewController" id="yWz-JQ-ljf"/>
-                        <segue destination="xEa-qX-4zm" kind="show" id="qPd-Q2-CPT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ktK-Qy-skd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1191" y="-375"/>
-        </scene>
-        <!--Game-->
-        <scene sceneID="xGV-kh-GlF">
-            <objects>
-                <viewController id="Llq-zU-t1p" sceneMemberID="viewController">
+                <viewController id="uju-LC-ft8" customClass="NewGameViewController" customModule="PickLocker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2n6-qB-wd3"/>
-                        <viewControllerLayoutGuide type="bottom" id="R3W-Uz-3Ri"/>
+                        <viewControllerLayoutGuide type="top" id="Pwb-Q7-vLX"/>
+                        <viewControllerLayoutGuide type="bottom" id="LWk-ao-4JT"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="A16-Jo-esz">
+                    <view key="view" contentMode="scaleToFill" id="HIG-EU-TCY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Game" id="4FF-Dg-RVh">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="zPD-FL-OiY"/>
-                    </navigationItem>
+                    <connections>
+                        <segue destination="Xp0-jK-ox3" kind="show" identifier="Play" id="PaV-iM-c4v"/>
+                        <segue destination="bVb-zd-UfS" kind="show" identifier="back" id="dIK-IH-nVG"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ENL-Uw-fF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myl-j0-Sco" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976" y="-4"/>
+            <point key="canvasLocation" x="1181" y="-227"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="bkC-hy-EUF">
+            <objects>
+                <viewController providesPresentationContextTransitionStyle="YES" id="Xp0-jK-ox3" customClass="GameViewController" customModule="PickLocker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hof-YG-7po"/>
+                        <viewControllerLayoutGuide type="bottom" id="rQk-pE-73k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ffy-jr-SNf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="bVb-zd-UfS" kind="show" identifier="back" id="OLi-6C-prK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6R-36-wyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="310"/>
         </scene>
         <!--Home Page Tab Bar Controller-->
         <scene sceneID="3fC-CS-BPn">
@@ -150,6 +158,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qPd-Q2-CPT"/>
+        <segue reference="dIK-IH-nVG"/>
     </inferredMetricsTieBreakers>
 </document>

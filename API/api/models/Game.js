@@ -15,7 +15,7 @@ module.exports = {
 	    model:'User',
 
 	     },
-	  "_player2" : {
+	  _player2 : {
 	      model:'User',
 	  },
       }

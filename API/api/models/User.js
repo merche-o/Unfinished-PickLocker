@@ -63,12 +63,13 @@ module.exports = {
 
     socialProfiles: {
       type: 'object',
-      defaultsTo: {}
+      //defaultsTo: {}
     },
 
     toJSON: function () {
       var obj = this.toObject();
 
+      //obj.password = HashService.bcrypt.hashSync(values.password);
       delete obj.password;
       delete obj.socialProfiles;
 
@@ -77,12 +78,12 @@ module.exports = {
   },
 
   beforeUpdate: function (values, next) {
-    if (values.password) values.password = HashService.bcrypt.hashSync(values.password);
+	if (values.password) values.password = HashService.bcrypt.hashSync(values.password);
     next();
   },
 
   beforeCreate: function (values, next) {
-    if (values.password) values.password = HashService.bcrypt.hashSync(values.password);
+	if (values.password) values.password = HashService.bcrypt.hashSync(values.password);
     next();
   }
 };
