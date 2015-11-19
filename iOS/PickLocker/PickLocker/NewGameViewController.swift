@@ -19,7 +19,11 @@ class NewGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //dans le cas d'une newGame
+        
+        //check si on peu rejoindre une game
+        requestManager.getWaitingGames((caller.user._id?.integerValue)!)
         // appels pour creer une game
+       
         
         //checker si le code est deja set ou pas ou est une partie qui existe deja lancer
         if (code.length == 4){

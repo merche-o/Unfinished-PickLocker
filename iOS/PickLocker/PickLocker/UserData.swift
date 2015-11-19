@@ -18,5 +18,6 @@ public class UserData {
     public var _lastName:String?
     public var _email:String?
     public var _photo:String?
-    
+    public var _life:NSNumber?
+    public var _bonusList:[BonusData]?
 }

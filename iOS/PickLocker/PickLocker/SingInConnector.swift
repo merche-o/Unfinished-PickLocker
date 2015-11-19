@@ -11,7 +11,6 @@ import Foundation
 
 class SigninConnector: WSConnector {
     
-    var idRestaurant:Int64 = 0
     var username:String = ""
     var password:String = ""
     var email:String = ""
@@ -46,7 +45,7 @@ class SigninConnector: WSConnector {
             i++;
         }
         
-        caller.signInDone(retCode, resp: responseParsed)
+        caller.signInDone(retCode, resp: responseParsed, token: self.token)
     }
     
     func parseUser(response:AnyObject)->UserData {
@@ -56,8 +55,28 @@ class SigninConnector: WSConnector {
         tmp._firstName = response.valueForKeyPath("firstName") as? String
         tmp._lastName = response.valueForKeyPath("lastName") as? String
         tmp._email = response.valueForKeyPath("email") as? String
+        tmp._photo = response.valueForKeyPath("photo") as? String
+        tmp._life = response.valueForKey("life") as? NSNumber
+        tmp._bonusList = parseBonus(response.valueForKey("list_bonus")!)
         return tmp;
     }
+    
+    func parseBonus(response:AnyObject)->[BonusData] {
+        var resp = [BonusData]()
+        var i = 0
+        
+        while i < response.count {
+        let tmp = BonusData()
+            tmp._id = response[i].valueForKeyPath("id") as? NSNumber
+        tmp._owner = response[i].valueForKeyPath("owner") as? NSNumber
+        tmp._name = response[i].valueForKeyPath("name") as? String
+        tmp._type = response[i].valueForKeyPath("type") as? String
+        resp.append(tmp)
+        i++
+        }
+        return resp;
+    }
+
     
     func signIn(username:String, password:String, email:String) {
         
@@ -70,7 +89,7 @@ class SigninConnector: WSConnector {
     }
     override func  handleError(retCode:Int) {
         super.handleError(retCode)
-        self.caller.signInDone(retCode, resp: [UserData]())
+        self.caller.signInDone(retCode, resp: [UserData](), token: "")
     }
     
     

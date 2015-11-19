@@ -17,6 +17,7 @@ class HomePageTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         requestManager.signIn("test", email: "o.mercher24@gmail.com", passwd: "test")
+           // requestManager.getMyGames((caller.user._id?.integerValue)!);
         // Do any additional setup after loading the view, typically from a nib.
     }
     

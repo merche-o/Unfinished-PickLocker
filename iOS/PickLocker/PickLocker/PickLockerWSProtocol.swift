@@ -10,9 +10,10 @@ import Foundation
 
 public protocol PickLockerWSProtocol {
     func getToken()->String
-    func signInDone(retCode:Int, resp:[UserData])
-    
-    
+    func signInDone(retCode:Int, resp:[UserData], token:String)
+    func getGamesDone(retCode:Int, resp:[GameData])
+    func getMyGamesDone(retCode:Int, resp:[GameData])
+    func postMyGamesDone(retCode: Int, resp:[GameData])
 }
 
 public class PicklockerConnector {
@@ -33,5 +34,22 @@ public class PicklockerConnector {
      //   let connector = GamesConnector(caller: caller)
    //     connector.getGames()
     }
+    
+    public func getMyGames(userid:Int) {
+        let connector = GameConnector(caller: caller)
+        connector.getMyGames(userid)
+    }
+    
+    public func getWaitingGames(userid:Int) {
+        let connector = GameConnector(
+        caller: caller)
+        connector.getWaitingGames(userid)
+    }
+    
+    public func postNewGame(user:UserData) {
+        let connector = GameConnector(caller:caller)
+        connector.postNewGame(user)
+    }
+    
 
 }
