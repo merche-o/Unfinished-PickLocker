@@ -59,7 +59,9 @@ class GameConnector: WSConnector {
             tmp._userId1 = response[i].valueForKeyPath("userid1") as? NSNumber
             tmp._userId2 = response[i].valueForKeyPath("userid2") as? NSNumber
             tmp._player1 = parsePlayer(response[i].valueForKeyPath("_player1")!)
+            if let _  = response[i].valueForKeyPath("_player2") {
             tmp._player2 = parsePlayer(response[i].valueForKeyPath("_player2")!)
+            }
             i++;
         }
         if (mode == 0){
@@ -119,7 +121,7 @@ class GameConnector: WSConnector {
     func postNewGame(user:UserData) {
         mode = 2;
         self.data = user;
-        self.apiAdress += "games?populate=_player1"
+        self.apiAdress += "games"
         self.httpMeth = Method.POST
         sendRequest(caller, req: self.httpMeth)
     }

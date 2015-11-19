@@ -46,7 +46,6 @@ class WSConnector {
             return temporaryURL
             }
             .progress { bytesRead, totalBytesRead, totalBytesExpectedToRead in
-                print(totalBytesRead)
                 
                 // This closure is NOT called on the main queue for performance
                 // reasons. To update your ui, dispatch to the main queue.
