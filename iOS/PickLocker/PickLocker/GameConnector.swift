@@ -14,6 +14,7 @@ import Foundation
 class GameConnector: WSConnector {
     var mode:Int = 0;
     var data = UserData()
+    var player2 = PlayerData()
 
     override init(caller: PickLockerWSProtocol) {
         super.init(caller: caller)
@@ -35,6 +36,15 @@ class GameConnector: WSConnector {
             print(parameters)
             self.params = parameters
         }
+        else if (req == Method.PUT) {
+            let parameters = [
+            "status_room": "in_game",
+            "status_game" : "p2",
+            "userid2":player2._userId!,
+            "_player2":player2._id!
+            ]
+            self.params = parameters
+        }
         
     }
 
@@ -42,7 +52,7 @@ class GameConnector: WSConnector {
     override func parseResponse(retCode: Int, response: AnyObject) {
         //doit parser response
         super.parseResponse(retCode, response: response)
-        let responseParsed = [GameData] ()
+        var responseParsed = [GameData] ()
         
         // parsing
         var i:Int
@@ -58,17 +68,28 @@ class GameConnector: WSConnector {
              tmp._nbTurn = response[i].valueForKeyPath("nb_turn") as? NSNumber
             tmp._userId1 = response[i].valueForKeyPath("userid1") as? NSNumber
             tmp._userId2 = response[i].valueForKeyPath("userid2") as? NSNumber
+            if let _ = response[i].valueForKeyPath("_player1") as? NSNumber {
+             //have to get player into _player1
+            }
+            else {
             tmp._player1 = parsePlayer(response[i].valueForKeyPath("_player1")!)
-            if let _  = response[i].valueForKeyPath("_player2") {
+            }
+             if let _ = response[i].valueForKeyPath("_player1") as? NSNumber {
+             //have to get player into _player1
+             }
+             else {
+                if let _  = response[i].valueForKeyPath("_player2") {
             tmp._player2 = parsePlayer(response[i].valueForKeyPath("_player2")!)
             }
+            }
+            responseParsed.append(tmp);
             i++;
         }
         if (mode == 0){
         caller.getGamesDone(retCode, resp: responseParsed)
         }
         else if (mode == 1){
-        caller.getMyGamesDone(retCode, resp: responseParsed)
+        caller.getWaitingGamesDone(retCode, resp: responseParsed)
         }
         else if (mode == 2)
         {
@@ -123,6 +144,15 @@ class GameConnector: WSConnector {
         self.data = user;
         self.apiAdress += "games"
         self.httpMeth = Method.POST
+        sendRequest(caller, req: self.httpMeth)
+    }
+    
+    func updateGamePlayer2(gameId:Int64, player2:PlayerData)
+    {
+        mode = -1;
+        self.apiAdress += "games/" + String(gameId)
+        self.httpMeth = Method.PUT
+        self.player2 = player2;
         sendRequest(caller, req: self.httpMeth)
     }
     

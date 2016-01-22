@@ -42,13 +42,15 @@ class RequestWS : PickLockerWSProtocol {
         }
         myGames = resp;    }
     
-    func getMyGamesDone(retCode: Int, resp: [GameData]) {
+    func getWaitingGamesDone(retCode: Int, resp: [GameData]) {
         if (retCode != 0) {
             print("error")
             return
         }
         if (resp.count > 0) {
         currentGame = resp[0];
+            //set myself to that game
+            //requestManager.postPlayer(user)
         }
         else {
             requestManager.postNewGame(user)
@@ -58,9 +60,22 @@ class RequestWS : PickLockerWSProtocol {
     }
     
     func postMyGamesDone(retCode: Int, resp:[GameData]) {
-     
-        print(resp);
+        currentGame = resp[0];
     }
     
+    func setPlayerDone(retCode:Int, resp:[PlayerData])
+    {
+        //requestManager.addPlayer2Data(resp[0])
+    }
+    
+    func setPlayerCodeDone(retCode:Int, resp:[PlayerData])
+    {
+        print("player code set");
+    }
+    
+    func postPlayerDone(retCode:Int, resp:[PlayerData], gameID:NSNumber?) {
 
+        print("postnewplayer");
+        requestManager.updateGamePlayer2((gameID?.longLongValue)!, player:resp[0]);
+    }
 }

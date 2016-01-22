@@ -111,7 +111,17 @@ class NewGameViewController: UIViewController {
     
     @IBAction func sendCode(sender: AnyObject){
         if (code.length == 4) {
-        self.performSegueWithIdentifier("Play", sender: nil)
+            print(code)
+            if (caller.currentGame._player1?._userId == caller.user._id) {
+                print("ici?")
+                requestManager.setPlayerCode(code as String, playerId: caller.currentGame._player1!._id!.longLongValue)
+            }
+            else {
+                print("la?")
+                requestManager.postPlayerInGame(code as String, userId: (caller.user._id?.longLongValue)!, gameID: (caller.currentGame._id?.longLongValue)!)
+            
+            }
+            self.performSegueWithIdentifier("Play", sender: nil)
         }
     }
     

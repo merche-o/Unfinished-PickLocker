@@ -22,6 +22,7 @@
 		2E77D5151BC6740D00C1A443 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D5141BC6740D00C1A443 /* HomePageViewController.swift */; };
 		2E77D5171BC7E75000C1A443 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77D5161BC7E75000C1A443 /* GameViewController.swift */; };
 		2E899B5B1BD3FFD90030D605 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E899B5A1BD3FFD90030D605 /* NewGameViewController.swift */; };
+		2E8ABE7A1C08B2E5005EDD9B /* PlayerConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8ABE791C08B2E5005EDD9B /* PlayerConnector.swift */; };
 		2EB5C5341BD90FA80006FC73 /* SingInConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5C5331BD90FA80006FC73 /* SingInConnector.swift */; };
 		2EB5C5361BD9125F0006FC73 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5C5351BD9125F0006FC73 /* UserData.swift */; };
 		2EB5C5381BD935960006FC73 /* RequestWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5C5371BD935960006FC73 /* RequestWS.swift */; };
@@ -71,6 +72,7 @@
 		2E77D5141BC6740D00C1A443 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		2E77D5161BC7E75000C1A443 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2E899B5A1BD3FFD90030D605 /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
+		2E8ABE791C08B2E5005EDD9B /* PlayerConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerConnector.swift; sourceTree = "<group>"; };
 		2EB5C5331BD90FA80006FC73 /* SingInConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingInConnector.swift; sourceTree = "<group>"; };
 		2EB5C5351BD9125F0006FC73 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		2EB5C5371BD935960006FC73 /* RequestWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestWS.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				2EB7641A1BD40B4100B459A6 /* WSConnector.swift */,
 				2EB5C5331BD90FA80006FC73 /* SingInConnector.swift */,
 				2E1419011BDBB83B00846C1F /* GameConnector.swift */,
+				2E8ABE791C08B2E5005EDD9B /* PlayerConnector.swift */,
 			);
 			name = Connector;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				2EB7641F1BD40C1400B459A6 /* PickLockerWSProtocol.swift in Sources */,
 				2E899B5B1BD3FFD90030D605 /* NewGameViewController.swift in Sources */,
 				2EB5C5381BD935960006FC73 /* RequestWS.swift in Sources */,
+				2E8ABE7A1C08B2E5005EDD9B /* PlayerConnector.swift in Sources */,
 				2E1419001BDBB63D00846C1F /* PlayerData.swift in Sources */,
 				2E1B0B551BDA889200750730 /* Bonus.swift in Sources */,
 				2EB5C5361BD9125F0006FC73 /* UserData.swift in Sources */,

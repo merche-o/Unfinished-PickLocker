@@ -12,8 +12,10 @@ public protocol PickLockerWSProtocol {
     func getToken()->String
     func signInDone(retCode:Int, resp:[UserData], token:String)
     func getGamesDone(retCode:Int, resp:[GameData])
-    func getMyGamesDone(retCode:Int, resp:[GameData])
+    func getWaitingGamesDone(retCode:Int, resp:[GameData])
     func postMyGamesDone(retCode: Int, resp:[GameData])
+    func setPlayerCodeDone(retCode:Int, resp:[PlayerData])
+    func postPlayerDone(retCode:Int, resp:[PlayerData], gameID:NSNumber?)
 }
 
 public class PicklockerConnector {
@@ -49,6 +51,22 @@ public class PicklockerConnector {
     public func postNewGame(user:UserData) {
         let connector = GameConnector(caller:caller)
         connector.postNewGame(user)
+    }
+    
+    public func setPlayerCode(code:String, playerId:Int64) {
+        let connector = PlayerConnector(caller: caller)
+        connector.setPlayerCode(code, playerId: playerId)
+    }
+    
+    public func postPlayerInGame(code:String, userId:Int64, gameID:Int64)
+    {
+        let connector = PlayerConnector(caller: caller)
+        connector.postPlayerInGame(code, userId: userId, gameID: gameID)
+    }
+    
+    public func updateGamePlayer2(gameID:Int64, player:PlayerData) {
+        let connector = GameConnector(caller: caller)
+        connector.updateGamePlayer2(gameID, player2: player)
     }
     
 

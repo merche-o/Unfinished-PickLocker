@@ -14,8 +14,21 @@ class GameViewController : UIViewController {
     var clearCodeButton = UIButton(type: UIButtonType.Custom) as UIButton
     var sendCodeButton = UIButton(type: UIButtonType.Custom) as UIButton
     var code = NSMutableString()
+    var currentPlayer = PlayerData();
+    var adversary = PlayerData()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (caller.currentGame._userId1 == caller.user._id && caller.currentGame._statusGame == "p1"){
+            currentPlayer = caller.currentGame._player1!
+            adversary = caller.currentGame._player2!
+        }
+        else if (caller.currentGame._statusGame == "p2"){
+            currentPlayer = caller.currentGame._player2!
+            adversary = caller.currentGame._player1!
+
+        }
+        
         backButton.frame = CGRectMake(0, 0, 128, 128)
         backButton.backgroundColor = UIColor.whiteColor()
         backButton.clipsToBounds = false
@@ -77,6 +90,9 @@ class GameViewController : UIViewController {
         self.view.addSubview(sendCodeButton)
     }
     
+    func codeManager() {
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -97,7 +113,13 @@ class GameViewController : UIViewController {
     }
     
     @IBAction func sendCode(sender: AnyObject){
-        print("code sent");
+        if (currentPlayer._try?.integerValue > 0)
+        {
+            currentPlayer._try = (currentPlayer._try?.integerValue)! - 1;
+            if (code == adversary._code) {
+                print("YOU WON");
+            }
+        }
     }
 
     
